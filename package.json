@@ -1,0 +1,31 @@
+{
+  "name": "places-backend",
+  "version": "1.0.0",
+  "description": "This is application helps user to find and locate places or address for there users. The api implement create, retrieve, update and delete places",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon server.js",
+    "start": "cross-env NODE_ENV=production node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Alex1-ai/places-backend.git"
+  },
+  "author": "Alex1-ai",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Alex1-ai/places-backend/issues"
+  },
+  "homepage": "https://github.com/Alex1-ai/places-backend#readme",
+  "devDependencies": {
+    "cross-env": "^7.0.3",
+    "nodemon": "^3.1.0"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "swagger-jsdoc": "^6.2.8",
+    "swagger-ui-express": "^5.0.0"
+  }
+}
