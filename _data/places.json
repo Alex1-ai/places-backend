@@ -1,0 +1,28 @@
+ [
+    {
+        "name": "Cafe A",
+        "description": "Cozy atmosphere",
+        "location": "City Center",
+        "open_hours": "8:00 AM - 10:00 PM",
+        "images":"https://res.cloudinary.com/tf-lab/image/upload/w_600,h_310,c_fill,g_auto:subject,q_auto,f_auto/restaurant/ee646809-4ca1-4b30-89fb-f94099b4b04b/b75c0b39-5cfc-4177-8bfb-164267d46c26.jpg"
+    },
+    {
+        "name": "Restaurant B",
+        "description": "Great food",
+        "location": "Downtown",
+        "open_hours": "10:00 AM - 6:00 PM",
+        "images":"https://res.cloudinary.com/tf-lab/image/upload/w_600,h_310,c_fill,g_auto:subject,q_auto,f_auto/restaurant/ee646809-4ca1-4b30-89fb-f94099b4b04b/b75c0b39-5cfc-4177-8bfb-164267d46c26.jpg"
+
+    },
+
+    {
+        "name": "Park C",
+        "description": "Beautiful scenery",
+        "location": "Suburbs",
+        "open_hours": "24/7",
+        "images":"https://res.cloudinary.com/tf-lab/image/upload/w_600,h_310,c_fill,g_auto:subject,q_auto,f_auto/restaurant/ee646809-4ca1-4b30-89fb-f94099b4b04b/b75c0b39-5cfc-4177-8bfb-164267d46c26.jpg"
+
+    }
+
+]
+
