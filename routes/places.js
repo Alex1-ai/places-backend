@@ -1,5 +1,4 @@
 const express = require('express')
-const upload = require('../middleware/uploads')
 // Import the controller functions
 const {
   getPlaces,
@@ -16,7 +15,7 @@ const router = express.Router()
 router.get('/', getPlaces)
 
 // Route to create a new place
-router.post('/', upload.single('image'), createPlace)
+router.post('/', createPlace)
 
 // Route to get a specific place by ID
 router.get('/:id', getPlace)

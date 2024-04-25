@@ -3,6 +3,8 @@ const express = require('express')
 const dotenv = require('dotenv')
 const morgan = require('morgan')
 const fileupload = require('express-fileupload')
+const mongoSanitize = require('express-mongo-sanitize')
+const cors = require('cors')
 // eslint-disable-next-line no-unused-vars
 const colors = require('colors')
 
@@ -33,6 +35,12 @@ if (process.env.NODE_ENV === 'development') {
 
 // File uploading
 app.use(fileupload())
+
+// Sanitize data
+app.use(mongoSanitize())
+
+// CORS
+app.use(cors())
 
 // Mount routers
 app.use('/api/v1/places', places)
