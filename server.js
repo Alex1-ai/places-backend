@@ -13,6 +13,7 @@ const connectDB = require('./config/db')
 
 // Load env vars
 dotenv.config({ path: './config/config.env' })
+dotenv.config({ path: './.env' })
 
 // Connect to database
 connectDB()
@@ -25,8 +26,11 @@ const app = express()
 // Body Parser
 app.use(express.json())
 
-// using static
+// react application build
 app.use(express.static(path.join(__dirname, 'public')))
+
+// Serve static files from the React app
+app.use(express.static(path.join(__dirname, 'dist', 'build')))
 
 // Dev logging middleware
 if (process.env.NODE_ENV === 'development') {
