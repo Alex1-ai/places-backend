@@ -49,6 +49,11 @@ app.use(cors())
 // Mount routers
 app.use('/api/v1/places', places)
 
+// Serve React app for all other routes(fallback)
+app.get('*', (req, res) => {
+  res.sendFile(path.resolve(__dirname, 'dist', 'build', 'index.html'))
+})
+
 // using the error handler
 app.use(errorHandler)
 const PORT = process.env.PORT || 5000
