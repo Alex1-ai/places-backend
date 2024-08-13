@@ -30,7 +30,7 @@ app.use(express.json())
 app.use(express.static(path.join(__dirname, 'public')))
 
 // Serve static files from the React app
-app.use(express.static(path.join(__dirname, 'dist', 'build')))
+app.use(express.static(path.join(__dirname, 'reactbuild', 'build')))
 
 // Dev logging middleware
 if (process.env.NODE_ENV === 'development') {
@@ -51,7 +51,7 @@ app.use('/api/v1/places', places)
 
 // Serve React app for all other routes(fallback)
 app.get('*', (req, res) => {
-  res.sendFile(path.resolve(__dirname, 'dist', 'build', 'index.html'))
+  res.sendFile(path.resolve(__dirname, 'reactbuild', 'build', 'index.html'))
 })
 
 // using the error handler
